@@ -3,6 +3,11 @@
 
 {% block content %}
 
+{% if current_user.is_authenticated %}
+<h1>You are already logged in</h1>
+<p>Click <a href="/">here</a> to return to the home page</p>
+{% else %}
+
   <header class="content-header">
     <h1>Please login</h1>
   </header>
@@ -28,6 +33,6 @@
     </div>
 
   </form>
-
+{% endif %}
 
 {% endblock content %}

@@ -1,0 +1,7 @@
+#main {
+  @include outer-container();
+}
+
+#messages {
+  @include span-columns(12);
+}

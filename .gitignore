@@ -11,3 +11,11 @@ __pycache__
 .DS_Store
 env.sh
 migrations
+.sass-cache
+main.css
+*node_modules*
+
+
+# Compiled files
+project/client/static/js/index.js
+project/client/static/stylesheets/main.css*

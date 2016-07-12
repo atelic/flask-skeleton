@@ -1,19 +1,23 @@
 # Flask Skeleton
 
-Flask starter project...
-
-[![Build Status](https://travis-ci.org/realpython/flask-skeleton.svg?branch=master)](https://travis-ci.org/realpython/flask-skeleton)
+Flask starter project with SQLAlchemy, Flask-login, Bourbon/Neat/Bitters, and Reactjs.
 
 ## Quick Start
 
 ### Basics
 
 1. Activate a virtualenv
-1. Install the requirements
+```sh
+$ mkvirtualenv flask-skeleton
+```
+2. Install the requirements
+```sh
+$ pip install -r requirements
+```
 
 ### Set Environment Variables
 
-Update *project/server/config.py*, and then run:
+Update `project/server/config.py`, and then run:
 
 ```sh
 $ export APP_SETTINGS="project.server.config.DevelopmentConfig"
@@ -28,17 +32,13 @@ $ export APP_SETTINGS="project.server.config.ProductionConfig"
 ### Create DB
 
 ```sh
-$ python manage.py create_db
-$ python manage.py db init
-$ python manage.py db migrate
-$ python manage.py create_admin
-$ python manage.py create_data
+$ inv init
 ```
 
 ### Run the Application
 
 ```sh
-$ python manage.py runserver
+$ inv server
 ```
 
 So access the application at the address [http://localhost:5000/](http://localhost:5000/)
@@ -46,7 +46,7 @@ So access the application at the address [http://localhost:5000/](http://localho
 > Want to specify a different port?
 
 > ```sh
-> $ python manage.py runserver -h 0.0.0.0 -p 8080
+> $ inv server --port 4567
 > ```
 
 ### Testing
@@ -54,11 +54,11 @@ So access the application at the address [http://localhost:5000/](http://localho
 Without coverage:
 
 ```sh
-$ python manage.py test
+$ inv test
 ```
 
 With coverage:
 
 ```sh
-$ python manage.py cov
+$ inv cov
 ```

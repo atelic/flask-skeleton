@@ -1,0 +1,69 @@
+/*
+Error: Undefined mixin 'outer-container'.
+        on line 2 of project/client/static/stylesheets/pages/base.scss, in `outer-container'
+        from line 2 of project/client/static/stylesheets/pages/base.scss
+
+1: #main {
+2:   @include outer-container();
+3: }
+4: 
+5: #messages {
+6:   @include span-columns(12);
+7: }
+
+Backtrace:
+project/client/static/stylesheets/pages/base.scss:2:in `outer-container'
+project/client/static/stylesheets/pages/base.scss:2
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/stack.rb:98:in `block in with_mixin'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/stack.rb:98:in `with_mixin'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/usr/local/share/gems/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/usr/local/share/gems/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/usr/local/share/gems/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/usr/local/share/gems/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/usr/local/share/gems/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/usr/local/share/gems/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'outer-container'.\A         on line 2 of project/client/static/stylesheets/pages/base.scss, in `outer-container'\A         from line 2 of project/client/static/stylesheets/pages/base.scss\A \A 1: #main {\A 2:   @include outer-container();\A 3: }\A 4: \A 5: #messages {\A 6:   @include span-columns(12);\A 7: }"; }

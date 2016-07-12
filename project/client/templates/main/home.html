@@ -2,10 +2,11 @@
 
 {% block content %}
 
-<div class="body-content">
-  <div class="row">
-    <h1>Welcome!</h1>
-  </div>
-</div>
+{% if current_user.is_authenticated %}
+  <h1> Welcome back <em>{{ current_user.email }}</em>!</h1>
+{% else %}
+  <h1>Welcome!</h1>
+  <p>Please <a href="{{url_for('user.login') }}">log in</a> to continue</p>
+{% endif %}
 
 {% endblock %}
